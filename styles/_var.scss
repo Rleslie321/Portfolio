@@ -1,0 +1,22 @@
+// Robert Leslie
+// sass variables
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$main-color: #ff6a00;
+$main-color-compliment: #ff984f;
+$text-color: #fff;
+$text-color2: #000;
+$bg-hover: rgba(255, 255, 255, 0.603);
+$bg-color: #777676;
+$compliment: #ff7f00;
+$bg: #333;
+$display-style: inline-block;
+$font: 'Montserrat', sans-serif;
+
+@mixin mainContent(){
+    border: 2px solid $main-color;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: $bg-color;
+    color: $text-color;
+}

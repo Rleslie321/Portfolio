@@ -1,0 +1,61 @@
+// Robert Leslie
+// SASS for index page
+// 2020
+@import './var';
+
+.aboutMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.aboutImg{
+    background-image: url('../images/profile.jpg');
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutImgContainer{
+    // border: 1px solid red;
+    width: 60vw;
+    height: 60vw;
+    margin-bottom: 1em;
+    min-width: 280px;
+    min-height: 280px;
+    max-width: 450px;
+    max-height: 450px;
+}
+
+.aboutInfo{
+    @include mainContent();
+    padding: 0.5em;
+    max-width: 1100px;
+    a{
+        list-style: none;
+        color: $text-color;
+    }
+    ul{
+        list-style-position: inside;
+    }
+}
+
+@media (min-width:760px){
+    .aboutMain{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .aboutImgContainer{
+        width: 30vw;
+        height: 30vw;
+        margin-bottom: 0;
+        margin-right: 1em;
+    }
+    .aboutInfo{
+        width: 70vw;
+    }
+}

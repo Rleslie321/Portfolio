@@ -1,0 +1,24 @@
+// Robert Leslie
+// SASS for resume page
+// 2020
+
+@import './var';
+
+.resume{
+    .heading{
+        text-align: center;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 760px){
+    .resume{
+        .courses{
+            flex-direction: row;
+        }
+    }
+}

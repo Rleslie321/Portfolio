@@ -1,0 +1,95 @@
+// Robert Leslie
+// css for all pages
+// 2020
+
+@import './var';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// sass for the hero image
+.heroimage {
+    background-image: url('../images/sunset.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroitems{
+    color: $text-color;
+    font-family: $font;
+}
+
+@import './nav';
+
+@import './index';
+
+// SASS for the rasterizer page
+.centerizer{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+@import './resume';
+
+// SASS for the contact page
+.contactForm{
+    width: 80%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+// SASS for the contactMe page
+.contactMe-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    text-align: center;
+    min-height: 400px;
+}
+
+// SASS for the messages page
+.messagesMain{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        margin-top: 0.5em;
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width:760px){
+    .contactForm{
+        width: 60%;
+    }
+    .contactMe-content{
+        flex-direction: row;
+        h1{
+            margin-right: 1em;
+        }
+    }
+}
+@import './footer';

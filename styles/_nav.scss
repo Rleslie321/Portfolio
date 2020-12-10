@@ -1,0 +1,153 @@
+// Robert Leslie
+// sass for the navigation section of all pages
+// 2020
+@import './var';
+
+@mixin navCustomizer(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: $bg-color solid 1px;
+    padding: 0.5em 2em;
+    width: 100%;
+}
+
+@mixin hoverCustom(){
+    &:hover{
+        color: $text-color2;
+        cursor: pointer;
+    }
+}
+
+nav{
+    // background-color: $main-color;
+    color: $text-color;
+    box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.3);
+}
+
+// for entire menu
+.menu{
+    display: none;
+    // customizing anchor tag
+    a{
+        list-style-type: none;
+        text-decoration: none !important;
+        color: $text-color;
+        @include hoverCustom();
+        @include navCustomizer();
+    }
+}
+
+.menu-shower{
+    display: block;
+    border-top: $bg-color solid 2px;
+    background-color: $main-color-compliment;
+    width: 100%;
+    opacity: 0;
+    animation: appear 0.5s;
+    // animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.active{
+    color: $text-color2 !important;
+}
+
+// customizing drop-down menus
+.dropdown{
+    width: 100%;
+    button{
+        border: none;
+        background-color: inherit;
+        color: $text-color;
+        @include navCustomizer();
+        @include hoverCustom();
+    }
+}
+
+.dropdown-content{
+    display: none;
+}
+.drop-show{
+    display: block;
+    a{
+        padding-left: 5em;
+    }
+}
+
+// for font-awesome icon that opens the menu on mobile
+#nav-opener{
+    padding: 5px;
+    font-size: 1.5rem;
+    @include hoverCustom();
+}
+
+.controller-container{
+    display: block;
+    text-align: right;
+    background-color: $main-color;
+}
+
+// media query to change from mobile to full website
+@media (min-width: 760px){
+    .controller-container{
+        display: none;
+    }
+    body{
+        position: relative;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: $main-color;
+        a{
+            width: auto;
+            border: none;
+        }
+        .fa-angle-right{
+            display: none;
+        }
+    }
+    .dropdown{
+        width: auto;
+        button{
+            border: none;
+            display: block;
+        }
+    }
+    .drop-show{
+        display: block;
+        position: absolute;
+        background-color: $main-color-compliment;
+        color: $text-color;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        a{
+            padding: 1em 0;
+            border-bottom: $bg-color solid 1px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &:last-child{
+                border: none;
+            }
+            z-index: 10;
+        }
+        box-shadow:0 0 2px 300em rgba(0, 0, 0, 0.1);
+    }
+    .active{
+        background-color: $main-color-compliment !important;
+    }
+}

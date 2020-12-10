@@ -1,0 +1,44 @@
+// Robert Leslie
+// 2020
+// sass for footer content
+
+@import './var';
+
+footer{
+    background-color: $bg;
+    color: $text-color;
+    box-shadow: 0 -3px 10px rgba($color: #000000, $alpha: 0.3);
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        font-size: 0.9rem;
+        .footer-link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1em;
+            text-decoration: none;
+            color: $text-color;
+            &:hover{
+                color: $bg-hover;
+            }
+        }
+    }
+
+    .copyright{
+        text-align: center;
+    }
+}
+
+@media (min-width:600px){
+    footer{
+        .container{
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size: 1rem;
+        }
+    }
+}
