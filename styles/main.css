@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -141,6 +142,7 @@ nav {
 
 .drop-show {
   display: block;
+  z-index: 99;
 }
 
 .drop-show a {
@@ -339,6 +341,128 @@ nav {
   }
 }
 
+.container-gallery {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.25rem;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin: 0.2em 2em 0.2em 2em;
+}
+
+.item {
+  margin: 1rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+}
+
+.item img:hover {
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  -webkit-filter: blur(2px) brightness(60%);
+          filter: blur(2px) brightness(60%);
+}
+
+.selector {
+  text-align: right;
+}
+
+.gallerybtn {
+  background-color: #ff6a00;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  -webkit-box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallerybtn:hover {
+  background-color: #ff984f;
+  color: #000;
+}
+
+.owl-stage {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+}
+
+.owl-carousel {
+  margin: 1rem 0;
+}
+
+.owl-carousel .owlitem img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.owlitem {
+  width: 60vw !important;
+  height: 60vw !important;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.owl-dots button {
+  border: none !important;
+  outline: none !important;
+  border-radius: 20%;
+  color: #000 !important;
+}
+
+.owl-dots button span {
+  background-color: #777676 !important;
+  width: 1.15em !important;
+  height: 1.15em !important;
+}
+
+.owl-dots .active {
+  background-color: #ff984f !important;
+}
+
+.owl-dots .active span {
+  background-color: #333 !important;
+}
+
+.owl-nav button {
+  border: none !important;
+  outline: none !important;
+}
+
+.owl-nav button:hover {
+  background-color: #777676 !important;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff !important;
+  font-size: 2rem !important;
+  font-weight: bolder !important;
+}
+
+.owl-prev {
+  left: 1%;
+}
+
+.owl-next {
+  right: 1%;
+}
+
 .contactForm {
   width: 80%;
 }
@@ -431,13 +555,9 @@ footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -467,18 +587,12 @@ footer .container .footer-link:hover {
 
 footer .copyright {
   text-align: center;
+  padding: 0 0.5rem;
 }
 
 @media (min-width: 600px) {
   footer .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

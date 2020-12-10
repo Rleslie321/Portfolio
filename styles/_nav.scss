@@ -81,6 +81,7 @@ nav{
 }
 .drop-show{
     display: block;
+    z-index: 99;
     a{
         padding-left: 5em;
     }

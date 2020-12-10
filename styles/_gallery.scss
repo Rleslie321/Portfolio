@@ -2,3 +2,120 @@
 // SASS for the gallery pages
 // 2020
 
+@import './var';
+
+.container-gallery{
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    // grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0.2em 2em 0.2em 2em;
+    // justify-content: center;
+}
+
+.item{
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+
+    img{
+        width: 100%;
+        height: 100%;
+
+        &:hover{
+            box-shadow: 0 8px 16px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+            cursor: pointer;
+            filter: blur(2px) brightness(60%);
+        }
+    }
+}
+
+.selector{
+    text-align: right;
+}
+
+.gallerybtn{
+    background-color: $main-color;
+    border: none;
+    color: $text-color;
+    cursor: pointer;
+    padding: 1rem;
+    box-shadow: -1px 3px 10px rgba(0,0,0,0.3);
+
+    &:hover{
+        background-color: $main-color-compliment;
+        color: $text-color2;
+    }
+}
+
+
+// for owl carousel
+.owl-stage {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+}
+.owl-carousel{
+    margin: 1rem 0;
+}
+
+.owl-carousel .owlitem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.owlitem{
+    width: 60vw !important;
+    height: 60vw !important;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.owl-dots{
+    button{
+        border: none !important;
+        outline: none !important;
+        border-radius: 20%;
+        color: $text-color2 !important;
+        span{
+            background-color: $bg-color !important;
+            width: 1.15em !important;
+            height: 1.15em !important;
+        }
+    }
+    .active{
+        background-color: $main-color-compliment !important;
+        span{
+            background-color: $bg !important;
+            
+        }
+    }
+}
+
+.owl-nav{
+    button{
+        border: none !important;
+        outline: none !important;
+        &:hover{
+            background-color: $bg-color !important;
+        }
+        
+    }
+}
+
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $text-color !important;
+    font-size: 2rem !important;
+    font-weight: bolder !important;
+}
+.owl-prev{
+    left: 1%;
+}
+
+.owl-next{
+    right: 1%;
+}
