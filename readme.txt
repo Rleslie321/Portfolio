@@ -1,0 +1,1 @@
+This website shows my knowledge of HTML5, CSS3, Javascript, PHP, and MySQL. Javascript libraries include Baguettebox, Owl.Carousel, JQuery, underscore, and more.

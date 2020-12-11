@@ -33,6 +33,23 @@
 
 @import './index';
 
+// SASS for the portfolio page
+.projectMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .content{
+        @include mainContent();
+        margin: 1.25rem;
+        padding: 1.25rem;
+        max-width: 700px;
+        h4{
+            text-align: center;
+        }
+    }
+}
+
 // SASS for the rasterizer page
 .centerizer{
     display: flex;
@@ -71,6 +88,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 2rem;
 }
 
 .centered{
