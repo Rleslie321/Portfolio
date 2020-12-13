@@ -47,6 +47,16 @@
         h4{
             text-align: center;
         }
+        a{
+            list-style: none;
+            color: $text-color;
+        }
+        .description{
+            font-weight: bold;
+        }
+        .readme{
+            text-indent: 1rem;
+        }
     }
 }
 

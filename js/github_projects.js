@@ -6,6 +6,7 @@
 
 // query for my repos
 const searchQueryURL = 'https://api.github.com/users/Rleslie321/repos';
+const WEBSITE_FINDER = "Website:";
 
 // when the page loads fetch my repos from github
 window.addEventListener('DOMContentLoaded', function (e) {
@@ -25,7 +26,7 @@ function printResponse(response){
         curr = response[i];
         waitOnMe(curr.name);
         const el = document.createElement('div');
-        el.innerHTML = `<div class='content'><h4>${curr.name}</h4><p>${curr.description}</p> <p></p></div>`;
+        el.innerHTML = `<div class='content'><h4>${curr.name}</h4><p class="description">${curr.description}</p> <p class="readme"></p></div>`;
         mydiv.appendChild(el);
     }
 }
@@ -37,7 +38,14 @@ function setMe(readme, name){
     const content  = document.querySelectorAll('.content');
     content.forEach((item)=>{
         if(item.children[0].innerHTML == name){
-            item.children[2].innerHTML = atob(readme.content);
+            var checkWebsite = atob(readme.content);
+            var websitePos = checkWebsite.indexOf(WEBSITE_FINDER);
+            if(websitePos != -1){
+                var website = checkWebsite.slice(websitePos + WEBSITE_FINDER.length+1);
+                checkWebsite = checkWebsite.slice(0, websitePos-1);
+                item.lastElementChild.insertAdjacentHTML("afterend", `<a href=${website}>${name} Link <i class="fas fa-angle-right"></i></a>`);
+            }
+            item.children[2].innerHTML = checkWebsite;
         }
     })
 }

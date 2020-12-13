@@ -338,6 +338,19 @@ nav {
   text-align: center;
 }
 
+.projectMain .content a {
+  list-style: none;
+  color: #fff;
+}
+
+.projectMain .content .description {
+  font-weight: bold;
+}
+
+.projectMain .content .readme {
+  text-indent: 1rem;
+}
+
 .centerizer {
   display: -webkit-box;
   display: -ms-flexbox;
