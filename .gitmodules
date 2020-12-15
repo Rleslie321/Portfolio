@@ -1,0 +1,3 @@
+[submodule "projects/grocerylist"]
+	path = projects/grocerylist
+	url = https://github.com/Rleslie321/Listly
