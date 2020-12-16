@@ -18,7 +18,7 @@
 
     <main class="projectMain">
         <br>
-        <h2>CSCI Projects</h2>
+        <h2>CS Projects</h2>
         <!-- <div class="content">
             <h4>This Website</h4>
             <p>This website shows my knowledge of HTML5, CSS3, Javascript, PHP, and MySQL. Javascript libraries include Baguettebox, Owl.Carousel, JQuery, underscore, and more.</p>

@@ -29,12 +29,16 @@
         </div>
         <div class="aboutInfo">
             <h1>About Robert</h1>
-            <p>Robert is currently attending Western Washington University for his Masters degree in Computer Science. His favorite classes have been in Game, Mobile app, and Web development. He grew up in West Seattle, moved to Bellingham for school, because he enjoyed the atmosphere, but has decided he would like to live somewhere warmer when he gets the chance.
+            <p>I am currently attending Western Washington University for my Masters degree in Computer Science. My favorite classes have been Web and Mobile app development. I grew up in West Seattle and moved to Bellingham for school. I choose Western Washington University because of the atmosphere and after one computer science course, I was hooked. I finished my major and graduated in 2018, but went back to school to learn more. I've recently been working on several projects, all of which I will add to this website under the portfolio page. 
+            </p>
+            <p>
+            In the next five years, I would like to start my career in Web development, move to a different, preferably warmer, location, and travel to Japan.
             </p>
 
             <h3>Experience</h3>
-            <p>While Robert has been in school, he has worked mostly at Walmart. He started on CAP 2 and moved to Support Manager then back to CAP 2 as the CAP 2 Supervisor until he eventually decided to focus on school.</p>
-            <p>Next quarter, Robert will be a TA for the computer science department at Western Washington University.</p>
+            <p>During Graduate School, I was a TA for the computer science department at Western Washington University. I gained a lot experience testing and debugging student's code, as well as explaining my ideas in many different ways. </p>
+            <p>While I have been in school, I have worked mostly at Walmart. I started on CAP 2 and moved to Support Manager then back to CAP 2 as the CAP 2 Supervisor. I was able to practice working in a team and working as a team leader, until I eventually decided to focus on school.</p>
+            
             <a href="Robert's_CS_Resume.pdf" target="_blank">Robert's Resume <i class="fas fa-angle-right"></i></a>
 
             <br><br>

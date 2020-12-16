@@ -61,8 +61,8 @@
                 </a>
             </div>
             <div class="item">
-                <a href="images/img10.JPG" data-caption="Loaf Charlie">
-                    <img src="images/img10.JPG" alt="">
+                <a href="images/img10.jpg" data-caption="Loaf Charlie">
+                    <img src="images/img10.jpg" alt="">
                 </a>
             </div>
             <div class="item">
