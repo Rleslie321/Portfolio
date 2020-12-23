@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/
+    - export DEPLOYPATH=/home/robexhrv/public_html/
     #for individual files
     - /bin/cp index.php $DEPLOYPATH
     - /bin/cp contact.php $DEPLOYPATH
