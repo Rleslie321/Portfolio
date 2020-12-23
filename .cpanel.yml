@@ -1,0 +1,24 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    #for individual files
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp contact.php $DEPLOYPATH
+    - /bin/cp contactMe.php $DEPLOYPATH
+    - /bin/cp gallery.php $DEPLOYPATH
+    - /bin/cp gallery2.php $DEPLOYPATH
+    - /bin/cp messages.php $DEPLOYPATH
+    - /bin/cp Projects.php $DEPLOYPATH
+    - /bin/cp rasterizer.php $DEPLOYPATH
+    - /bin/cp resume.php $DEPLOYPATH
+    - /bin/cp Robert's_CS_Resume.pdf $DEPLOYPATH
+    - /bin/cp robs_icon.ico $DEPLOYPATH
+    #for full directories
+    - /bin/cp -R bootstrap $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R include $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R node_modules $DEPLOYPATH
+    - /bin/cp -R projects $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
