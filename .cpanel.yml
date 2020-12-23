@@ -1,0 +1,24 @@
+---
+deployment:
+ tasks:
+    - export DEPLOYPATH=/home/robexhrv/public_html
+    #for individual files
+    - /bin/cp /home/robexhrv/Portfolio/index.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/contact.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/contactMe.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/gallery.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/gallery2.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/messages.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/Projects.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/rasterizer.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/resume.php $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/Robert's_CS_Resume.pdf $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/robs_icon.ico $DEPLOYPATH
+    #for full directories
+    - /bin/cp -R /home/robexhrv/Portfolio/bootstrap $DEPLOYPATH
+    - /bin/cp -R /home/robexhrv/Portfolio/images $DEPLOYPATH
+    - /bin/cp -R /home/robexhrv/Portfolio/include $DEPLOYPATH
+    - /bin/cp -R /home/robexhrv/Portfolio/js $DEPLOYPATH
+    - /bin/cp -R /home/robexhrv/Portfolio/node_modules $DEPLOYPATH
+    - /bin/cp -R /home/robexhrv/Portfolio/projects $DEPLOYPATH
+    - /bin/cp -R /home/robexhrv/Portfolio/styles $DEPLOYPATH
