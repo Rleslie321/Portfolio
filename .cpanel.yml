@@ -12,7 +12,7 @@ deployment:
     - /bin/cp /home/robexhrv/Portfolio/Projects.php $DEPLOYPATH
     - /bin/cp /home/robexhrv/Portfolio/rasterizer.php $DEPLOYPATH
     - /bin/cp /home/robexhrv/Portfolio/resume.php $DEPLOYPATH
-    - /bin/cp /home/robexhrv/Portfolio/Robert's_CS_Resume.pdf $DEPLOYPATH
+    - /bin/cp /home/robexhrv/Portfolio/Robert\'s_CS_Resume.pdf $DEPLOYPATH
     - /bin/cp /home/robexhrv/Portfolio/robs_icon.ico $DEPLOYPATH
     #for full directories
     - /bin/cp -R /home/robexhrv/Portfolio/bootstrap $DEPLOYPATH
