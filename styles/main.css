@@ -341,6 +341,15 @@ nav {
 .projectMain .content a {
   list-style: none;
   color: #fff;
+  background-color: #ff6a00;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.projectMain .content a:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+  text-decoration: none;
 }
 
 .projectMain .content .description {

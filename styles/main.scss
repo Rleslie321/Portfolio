@@ -50,6 +50,13 @@
         a{
             list-style: none;
             color: $text-color;
+            background-color: $main-color;
+            border-radius: 5px;
+            padding: 10px 10px;
+            &:hover{
+                filter: brightness(0.9);
+                text-decoration: none;
+            }
         }
         .description{
             font-weight: bold;
