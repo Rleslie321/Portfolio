@@ -10,7 +10,7 @@ const WEBSITE_FINDER = "Website:";
 window.onload = async () =>{
     const response = await fetch('/app/projects');
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     let curr = null;
     for(i = 0; i < data.length; i++){
         curr = data[i];
