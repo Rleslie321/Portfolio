@@ -13,7 +13,8 @@
 
 // sass for the hero image
 .heroimage {
-    background-image: url('../images/sunset.jpg');
+    // background-image: url('../images/sunset.jpg');
+    background-image: url('../images/sunset-derivatives/sunset-512_x_512.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,6 +23,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-device-width: 400px){
+    .heroimage {
+        background-image: url('../images/sunset-derivatives/sunset-1080_x_1080.jpg');
+    }
+}
+@media (min-device-width: 600px){
+    .heroimage {
+        background-image: url('../images/sunset-derivatives/sunset-1920_x_1080.jpg');
+    }
 }
 
 .heroitems{

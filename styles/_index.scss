@@ -12,12 +12,23 @@
 }
 
 .aboutImg{
-    background-image: url('../images/profile.jpg');
+    background-image: url('../images/profile-derivatives/profile-384_x_512.jpg');
     width: 100%;
     height: 100%;
     border-radius: 100%;
     background-position: center;
     background-size: cover;
+}
+
+@media (min-device-width: 400px){
+    .aboutImg {
+        background-image: url('../images/profile-derivatives/profile-810_x_1080.jpg');
+    }
+}
+@media (min-device-width: 600px){
+    .aboutImg {
+        background-image: url('../images/profile.jpg');
+    }
 }
 
 .aboutImgContainer{
