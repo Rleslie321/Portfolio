@@ -3,7 +3,7 @@
 // javascript program to pull project information from my backend api
 // 2020
 
-const content =  document.querySelector('.content');
+const content =  document.querySelector('.projectMain');
 const WEBSITE_FINDER = "Website:";
 
 // when the window loads, call my api and get the information returned
