@@ -22,3 +22,4 @@ deployment:
     - /bin/cp -R /home/robexhrv/Portfolio/node_modules $DEPLOYPATH
     - /bin/cp -R /home/robexhrv/Portfolio/projects $DEPLOYPATH
     - /bin/cp -R /home/robexhrv/Portfolio/styles $DEPLOYPATH
+    - /bin/cp -R /home/robexhrv/Portfolio/raster $DEPLOYPATH
